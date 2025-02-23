@@ -1,0 +1,122 @@
+
+/* Base styling with a dark theme and radiant blue accents */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #121212; /* Deep dark background */
+    color: #e0e0e0; /* Light text for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header with a black-blue gradient */
+header {
+    background: linear-gradient(90deg, #000000, #1a237e); /* Black to deep blue gradient */
+    color: #ffffff;
+    padding: 20px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+    position: relative;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    transition: transform 0.3s ease;
+}
+
+header h1:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation styling */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #1e90ff; /* Radiant blue accent */
+    transform: translateY(-2px);
+}
+
+/* Container for main content */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #000000; /* Dark gray container background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Footer styling */
+footer {
+    background: #000000;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+    border-top: 2px solid #1e90ff;
+}
+
+/* Button styling */
+.btn,
+form button,
+form input[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover,
+form button:hover,
+form input[type="submit"]:hover {
+    background-color: #1565c0;
+    transform: scale(1.05);
+}
+
+/* Headings */
+h2, h3 {
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+/* Link transitions */
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1e90ff;
+}
+
+/* List styles */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+li:hover {
+    transform: translateX(5px);
+}
